@@ -97,7 +97,7 @@ do
         break
     fi
   done
-done < input-wm-list-diff.txt
+done < 1-list.txt
 
 git add -A .
 git commit -m --allow-empty
