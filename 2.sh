@@ -106,7 +106,9 @@ git push origin HEAD -f
 gitCommit=`git rev-parse HEAD`
 linkGit=`echo https://raw.githubusercontent.com/binhvmo/git/`$gitCommit`echo /`
 linkApi=`echo https://script.google.com/macros/s/AKfycbzNIhUmWHdnnUTcxVpQUZfJZowt2j242nCac867MeudHhL7idGLGCia1xiOi7-z8ISP/exec?`
-linkPost=$linkApi`echo Link ID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\&Giá hiện tại==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\&Trạng thái hàng==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\&Giá gốc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)`
-echo $linkPost
+linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\&GiaHienTai==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\&TrangThaiHang==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\&GiaGoc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)`
 
+echo '[InternetShortcut]\
+URL='$linkPost > 2.url
+open 2.url
 
