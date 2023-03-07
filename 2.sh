@@ -111,4 +111,3 @@ linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\
 echo '[InternetShortcut]\
 URL='$linkPost > $0 | sed 's/...$/.url/'
 open $0 | sed 's/...$/.url/'
-
