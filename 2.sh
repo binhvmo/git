@@ -109,6 +109,6 @@ linkApi=`echo https://script.google.com/macros/s/AKfycbzNIhUmWHdnnUTcxVpQUZfJZow
 linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\)\&GiaHienTai==IMPORTDATA\(\"`$linkGit`echo ebay-currentPrice.txt\"\)\&TrangThaiHang==IMPORTDATA\(\"`$linkGit`echo ebay-availabilityStatus.txt\"\)\&GiaGoc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)`
 
 echo '[InternetShortcut]\
-URL='$linkPost > 2.url
-open 2.url
+URL='$linkPost > $0.url
+open $0.url
 
