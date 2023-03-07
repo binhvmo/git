@@ -112,6 +112,6 @@ linkPost=$linkApi`echo LinkID==IMPORTDATA\(\"`$linkGit`echo ebay-usItemId.txt\"\
 \&GiaGoc==IMPORTDATA\(\"`$linkGit`echo ebay-wasPrice.txt\"\)
 `
 echo '[InternetShortcut]\
-URL='$linkPost > $0.url
-open $0.url
+URL='$linkPost > $(basename "$0").url
+open $(basename "$0").url
 
